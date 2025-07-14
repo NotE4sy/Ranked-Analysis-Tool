@@ -1,0 +1,251 @@
+[gd_scene load_steps=9 format=3 uid="uid://je1mkrn0yftr"]
+
+[ext_resource type="Theme" uid="uid://buv1nnsojl73b" path="res://Themes/TextSplits.tres" id="1_2wj52"]
+[ext_resource type="Texture2D" uid="uid://bcv8m0vunehcw" path="res://Images/Netherrack.webp" id="2_n2c76"]
+[ext_resource type="Texture2D" uid="uid://bgbb7chewnyw1" path="res://Images/Gold_Block.webp" id="3_keety"]
+[ext_resource type="Texture2D" uid="uid://b4nhcfhvcht6t" path="res://Images/Nether_Bricks.webp" id="4_5ewda"]
+[ext_resource type="Texture2D" uid="uid://bhd5mwhpxgsuk" path="res://Images/Portal.webp" id="5_s8683"]
+[ext_resource type="Texture2D" uid="uid://dklygtj1elm71" path="res://Images/End_Frame.webp" id="6_6f6ah"]
+[ext_resource type="Texture2D" uid="uid://dix70q7lbx6ux" path="res://Images/Endstone.webp" id="7_b4qe3"]
+[ext_resource type="Texture2D" uid="uid://obxmbqhlggbr" path="res://Images/Dragon_Egg.webp" id="8_mmwfl"]
+
+[node name="Timestamps" type="Node2D"]
+
+[node name="Nether Enter" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 32.0
+offset_top = 416.0
+offset_right = 320.0
+offset_bottom = 520.0
+
+[node name="Name" type="RichTextLabel" parent="Nether Enter"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 8.0
+offset_right = 328.0
+offset_bottom = 48.0
+theme = ExtResource("1_2wj52")
+text = "Nether Enter"
+scroll_active = false
+
+[node name="Time_SampleSize" type="RichTextLabel" parent="Nether Enter"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 48.0
+offset_right = 328.0
+offset_bottom = 88.0
+theme = ExtResource("1_2wj52")
+theme_override_font_sizes/normal_font_size = 0
+text = "N/A"
+scroll_active = false
+
+[node name="Netherrack" type="Sprite2D" parent="Nether Enter"]
+position = Vector2(48, 56)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_n2c76")
+
+[node name="Bastion" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 32.0
+offset_top = 520.0
+offset_right = 320.0
+offset_bottom = 624.0
+
+[node name="Name" type="RichTextLabel" parent="Bastion"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 8.0
+offset_right = 368.0
+offset_bottom = 48.0
+theme = ExtResource("1_2wj52")
+text = "Enter Bastion"
+scroll_active = false
+
+[node name="Time_SampleSize" type="RichTextLabel" parent="Bastion"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 48.0
+offset_right = 328.0
+offset_bottom = 88.0
+theme = ExtResource("1_2wj52")
+theme_override_font_sizes/normal_font_size = 0
+text = "N/A"
+scroll_active = false
+
+[node name="GoldBlock" type="Sprite2D" parent="Bastion"]
+position = Vector2(48, 56)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_keety")
+
+[node name="Fortress" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 32.0
+offset_top = 624.0
+offset_right = 320.0
+offset_bottom = 728.0
+
+[node name="Name" type="RichTextLabel" parent="Fortress"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 8.0
+offset_right = 376.0
+offset_bottom = 48.0
+theme = ExtResource("1_2wj52")
+text = "Enter Fortress"
+scroll_active = false
+
+[node name="Time_SampleSize" type="RichTextLabel" parent="Fortress"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 48.0
+offset_right = 328.0
+offset_bottom = 88.0
+theme = ExtResource("1_2wj52")
+theme_override_font_sizes/normal_font_size = 0
+text = "N/A"
+scroll_active = false
+
+[node name="NetherBricks" type="Sprite2D" parent="Fortress"]
+position = Vector2(48, 56)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_5ewda")
+
+[node name="Blind" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 32.0
+offset_top = 728.0
+offset_right = 320.0
+offset_bottom = 832.0
+
+[node name="Name" type="RichTextLabel" parent="Blind"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 8.0
+offset_right = 368.0
+offset_bottom = 48.0
+theme = ExtResource("1_2wj52")
+text = "Blind
+"
+scroll_active = false
+
+[node name="Time_SampleSize" type="RichTextLabel" parent="Blind"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 48.0
+offset_right = 328.0
+offset_bottom = 88.0
+theme = ExtResource("1_2wj52")
+theme_override_font_sizes/normal_font_size = 0
+text = "N/A"
+scroll_active = false
+
+[node name="Portal" type="Sprite2D" parent="Blind"]
+position = Vector2(48, 48)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("5_s8683")
+
+[node name="Stronghold" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 448.0
+offset_top = 416.0
+offset_right = 736.0
+offset_bottom = 520.0
+
+[node name="Name" type="RichTextLabel" parent="Stronghold"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 8.0
+offset_right = 408.0
+offset_bottom = 48.0
+theme = ExtResource("1_2wj52")
+text = "Enter Stronghold"
+scroll_active = false
+
+[node name="Time_SampleSize" type="RichTextLabel" parent="Stronghold"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 48.0
+offset_right = 328.0
+offset_bottom = 88.0
+theme = ExtResource("1_2wj52")
+theme_override_font_sizes/normal_font_size = 0
+text = "N/A"
+scroll_active = false
+
+[node name="EndFrame" type="Sprite2D" parent="Stronghold"]
+position = Vector2(48, 48)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("6_6f6ah")
+
+[node name="End" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 448.0
+offset_top = 512.0
+offset_right = 736.0
+offset_bottom = 616.0
+
+[node name="Name" type="RichTextLabel" parent="End"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 8.0
+offset_right = 368.0
+offset_bottom = 48.0
+theme = ExtResource("1_2wj52")
+text = "Enter End"
+scroll_active = false
+
+[node name="Time_SampleSize" type="RichTextLabel" parent="End"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 48.0
+offset_right = 328.0
+offset_bottom = 88.0
+theme = ExtResource("1_2wj52")
+theme_override_font_sizes/normal_font_size = 0
+text = "N/A"
+scroll_active = false
+
+[node name="Endstone" type="Sprite2D" parent="End"]
+position = Vector2(48, 56)
+scale = Vector2(0.252778, 0.252778)
+texture = ExtResource("7_b4qe3")
+
+[node name="Completion" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 448.0
+offset_top = 616.0
+offset_right = 736.0
+offset_bottom = 720.0
+
+[node name="DragonEgg" type="Sprite2D" parent="Completion"]
+position = Vector2(48, 48)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("8_mmwfl")
+
+[node name="Name" type="RichTextLabel" parent="Completion"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 8.0
+offset_right = 448.0
+offset_bottom = 48.0
+theme = ExtResource("1_2wj52")
+text = "Average Completion"
+scroll_active = false
+
+[node name="Time_SampleSize" type="RichTextLabel" parent="Completion"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 48.0
+offset_right = 328.0
+offset_bottom = 88.0
+theme = ExtResource("1_2wj52")
+theme_override_font_sizes/normal_font_size = 0
+text = "N/A"
+scroll_active = false

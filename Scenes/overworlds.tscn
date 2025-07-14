@@ -1,0 +1,180 @@
+[gd_scene load_steps=7 format=3 uid="uid://c2va76n8ld12g"]
+
+[ext_resource type="Theme" uid="uid://buv1nnsojl73b" path="res://Themes/TextSplits.tres" id="1_r4wum"]
+[ext_resource type="Texture2D" uid="uid://cletslgyvx4x7" path="res://Images/Chest.webp" id="2_r4wum"]
+[ext_resource type="Texture2D" uid="uid://cw17t23fjkyqd" path="res://Images/Village.webp" id="3_3ak6i"]
+[ext_resource type="Texture2D" uid="uid://i44i6m0yxaym" path="res://Images/Shipwreck.webp" id="4_r4wum"]
+[ext_resource type="Texture2D" uid="uid://bux6dbxiko84g" path="res://Images/Desert Temple.webp" id="5_3ak6i"]
+[ext_resource type="Texture2D" uid="uid://ccu413y53l4lw" path="res://Images/Ruined Portal.webp" id="6_xwul3"]
+
+[node name="Overworlds" type="Node2D"]
+
+[node name="Buried Treasure" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 32.0
+offset_top = 416.0
+offset_right = 320.0
+offset_bottom = 520.0
+
+[node name="Name" type="RichTextLabel" parent="Buried Treasure"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 8.0
+offset_right = 392.0
+offset_bottom = 48.0
+theme = ExtResource("1_r4wum")
+text = "Buried Treasure"
+scroll_active = false
+
+[node name="Time_SampleSize" type="RichTextLabel" parent="Buried Treasure"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 48.0
+offset_right = 328.0
+offset_bottom = 88.0
+theme = ExtResource("1_r4wum")
+theme_override_font_sizes/normal_font_size = 0
+text = "N/A"
+scroll_active = false
+
+[node name="Chest" type="Sprite2D" parent="Buried Treasure"]
+position = Vector2(48, 56)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_r4wum")
+
+[node name="Village" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 32.0
+offset_top = 520.0
+offset_right = 320.0
+offset_bottom = 624.0
+
+[node name="Name" type="RichTextLabel" parent="Village"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 8.0
+offset_right = 368.0
+offset_bottom = 48.0
+theme = ExtResource("1_r4wum")
+text = "Village"
+scroll_active = false
+
+[node name="Time_SampleSize" type="RichTextLabel" parent="Village"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 48.0
+offset_right = 328.0
+offset_bottom = 88.0
+theme = ExtResource("1_r4wum")
+theme_override_font_sizes/normal_font_size = 0
+text = "N/A"
+scroll_active = false
+
+[node name="Village2" type="Sprite2D" parent="Village"]
+position = Vector2(48, 56)
+scale = Vector2(0.151856, 0.16)
+texture = ExtResource("3_3ak6i")
+
+[node name="Shipwreck" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 32.0
+offset_top = 624.0
+offset_right = 320.0
+offset_bottom = 728.0
+
+[node name="Name" type="RichTextLabel" parent="Shipwreck"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 8.0
+offset_right = 376.0
+offset_bottom = 48.0
+theme = ExtResource("1_r4wum")
+text = "Shipwreck"
+scroll_active = false
+
+[node name="Time_SampleSize" type="RichTextLabel" parent="Shipwreck"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 48.0
+offset_right = 328.0
+offset_bottom = 88.0
+theme = ExtResource("1_r4wum")
+theme_override_font_sizes/normal_font_size = 0
+text = "N/A"
+scroll_active = false
+
+[node name="Shipwreck2" type="Sprite2D" parent="Shipwreck"]
+position = Vector2(48, 48)
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("4_r4wum")
+
+[node name="Desert Temple" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 448.0
+offset_top = 416.0
+offset_right = 736.0
+offset_bottom = 520.0
+
+[node name="Name" type="RichTextLabel" parent="Desert Temple"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 8.0
+offset_right = 408.0
+offset_bottom = 48.0
+theme = ExtResource("1_r4wum")
+text = "Desert Temple"
+scroll_active = false
+
+[node name="Time_SampleSize" type="RichTextLabel" parent="Desert Temple"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 48.0
+offset_right = 328.0
+offset_bottom = 88.0
+theme = ExtResource("1_r4wum")
+theme_override_font_sizes/normal_font_size = 0
+text = "N/A"
+scroll_active = false
+
+[node name="DesertTemple" type="Sprite2D" parent="Desert Temple"]
+position = Vector2(48, 48)
+scale = Vector2(0.0853333, 0.104945)
+texture = ExtResource("5_3ak6i")
+
+[node name="Ruined Portal" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 448.0
+offset_top = 512.0
+offset_right = 736.0
+offset_bottom = 616.0
+
+[node name="Name" type="RichTextLabel" parent="Ruined Portal"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 8.0
+offset_right = 368.0
+offset_bottom = 48.0
+theme = ExtResource("1_r4wum")
+text = "Ruined Portal"
+scroll_active = false
+
+[node name="Time_SampleSize" type="RichTextLabel" parent="Ruined Portal"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 48.0
+offset_right = 328.0
+offset_bottom = 88.0
+theme = ExtResource("1_r4wum")
+theme_override_font_sizes/normal_font_size = 0
+text = "N/A"
+scroll_active = false
+
+[node name="RuinedPortal" type="Sprite2D" parent="Ruined Portal"]
+position = Vector2(48, 56)
+scale = Vector2(0.164497, 0.164497)
+texture = ExtResource("6_xwul3")

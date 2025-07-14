@@ -1,0 +1,145 @@
+[gd_scene load_steps=6 format=3 uid="uid://d2rhidusuoovx"]
+
+[ext_resource type="Theme" uid="uid://buv1nnsojl73b" path="res://Themes/TextSplits.tres" id="1_xsy58"]
+[ext_resource type="Texture2D" uid="uid://b3qjtil452xkj" path="res://Images/Bridge.webp" id="2_rjbeq"]
+[ext_resource type="Texture2D" uid="uid://bhaxmp2f8uxbr" path="res://Images/Housing.webp" id="3_q1lid"]
+[ext_resource type="Texture2D" uid="uid://4bgrjxm026mb" path="res://Images/Stables.webp" id="4_ef1ew"]
+[ext_resource type="Texture2D" uid="uid://k46mw0twhm5s" path="res://Images/Treasure.webp" id="5_dlqaq"]
+
+[node name="bastions" type="Node2D"]
+
+[node name="Bridge" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 32.0
+offset_top = 416.0
+offset_right = 320.0
+offset_bottom = 520.0
+
+[node name="Name" type="RichTextLabel" parent="Bridge"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 8.0
+offset_right = 416.0
+offset_bottom = 48.0
+theme = ExtResource("1_xsy58")
+text = "Bridge"
+scroll_active = false
+
+[node name="Time_SampleSize" type="RichTextLabel" parent="Bridge"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 48.0
+offset_right = 352.0
+offset_bottom = 88.0
+theme = ExtResource("1_xsy58")
+theme_override_font_sizes/normal_font_size = 0
+text = "N/A"
+scroll_active = false
+
+[node name="Bridge" type="Sprite2D" parent="Bridge"]
+position = Vector2(57.25, 52)
+scale = Vector2(0.304167, 0.295652)
+texture = ExtResource("2_rjbeq")
+
+[node name="Housing" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 32.0
+offset_top = 544.0
+offset_right = 320.0
+offset_bottom = 648.0
+
+[node name="Name" type="RichTextLabel" parent="Housing"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 58.3539
+offset_right = 392.0
+offset_bottom = 98.3539
+theme = ExtResource("1_xsy58")
+text = "Housing"
+scroll_active = false
+
+[node name="Time_SampleSize" type="RichTextLabel" parent="Housing"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 98.3539
+offset_right = 352.0
+offset_bottom = 138.354
+theme = ExtResource("1_xsy58")
+theme_override_font_sizes/normal_font_size = 0
+text = "N/A"
+scroll_active = false
+
+[node name="Housing2" type="Sprite2D" parent="Housing"]
+position = Vector2(56, 84.5801)
+scale = Vector2(0.311111, 0.300963)
+texture = ExtResource("3_q1lid")
+
+[node name="Stables" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 448.0
+offset_top = 416.0
+offset_right = 736.0
+offset_bottom = 520.0
+
+[node name="Name" type="RichTextLabel" parent="Stables"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 8.0
+offset_right = 432.0
+offset_bottom = 48.0
+theme = ExtResource("1_xsy58")
+text = "Stables"
+scroll_active = false
+
+[node name="Time_SampleSize" type="RichTextLabel" parent="Stables"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 48.0
+offset_right = 352.0
+offset_bottom = 88.0
+theme = ExtResource("1_xsy58")
+theme_override_font_sizes/normal_font_size = 0
+text = "N/A"
+scroll_active = false
+
+[node name="Stables2" type="Sprite2D" parent="Stables"]
+position = Vector2(48, 56)
+scale = Vector2(0.503, 0.503)
+texture = ExtResource("4_ef1ew")
+
+[node name="Treasure" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 448.0
+offset_top = 586.354
+offset_right = 736.0
+offset_bottom = 690.354
+
+[node name="Name" type="RichTextLabel" parent="Treasure"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 8.0
+offset_right = 392.0
+offset_bottom = 48.0
+theme = ExtResource("1_xsy58")
+text = "Treaure"
+scroll_active = false
+
+[node name="Time_SampleSize" type="RichTextLabel" parent="Treasure"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 48.0
+offset_right = 352.0
+offset_bottom = 88.0
+theme = ExtResource("1_xsy58")
+theme_override_font_sizes/normal_font_size = 0
+text = "N/A"
+scroll_active = false
+
+[node name="Treasure" type="Sprite2D" parent="Treasure"]
+position = Vector2(55.25, 42.4499)
+scale = Vector2(0.0945833, 0.0945833)
+texture = ExtResource("5_dlqaq")
