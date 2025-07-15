@@ -403,9 +403,9 @@ func _on_ranked_get_match_request_completed(_result: int, _response_code: int, _
 			match advancement["type"]:
 				"projectelo.timeline.reset":
 					latestReset = advancement["time"]
-					if latestSplit[0] != "":
-						splitsDuration[latestSplit[1]][0] -= 1
-						splitsDuration[latestSplit[1]][1] -= gameResult - currentMatchTimestamps[latestSplit[0]]
+					#if latestSplit[0] != "":
+					#	splitsDuration[latestSplit[1]][0] -= 1
+					#	splitsDuration[latestSplit[1]][1] -= gameResult - currentMatchTimestamps[latestSplit[0]]
 				"story.enter_the_nether":
 					currentMatchTimestamps["enter_nether"] = advancement["time"]
 					splitsDuration["overworld"][1] += advancement["time"] - latestReset
@@ -464,16 +464,20 @@ func _on_ranked_get_match_request_completed(_result: int, _response_code: int, _
 		splitsDuration["end"][0] += 1
 		splitsDuration["end"][1] += gameResult - currentMatchTimestamps["enter_end"]
 	else:
-		if latestSplit[0] != "":
-			splits[latestSplit[0]][1] -= gameResult - currentMatchTimestamps[latestSplit[0]]
-			splits[latestSplit[0]][0] -= 1
+		pass
+		#if latestSplit[0] != "":
+		#	splits[latestSplit[0]][1] -= gameResult - currentMatchTimestamps[latestSplit[0]]
+		#	splits[latestSplit[0]][0] -= 1
 
 	matchesParsed += 1
 	
 	print("Matches: " + str(matchesParsed))
-	print(currentMatchTimestamps)
-	print(splits)
-	print(splitsDuration)
+	print("CurrentMatchTimestamps: " + str(currentMatchTimestamps))
+	print("Splits: " + str(splits))
+	print("Split Durations: " + str(splitsDuration))
+	print("Latest Reset: " + str(latestReset))
+	print("Latest Split: " + str(latestSplit))
+	print("")
 
 func _on_gamemode_option_item_selected(index: int) -> void:
 	matchCount = 20
